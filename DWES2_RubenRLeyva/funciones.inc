@@ -22,7 +22,7 @@ function conexion()
        global $dwes;
        
        // Comprobar la IP, en Windows 127.0.0.1 en MAC en mi caso 192.168.64.2
-       $dwes = new PDO('mysql:host=mysql.hostinger.es;dbname=u366072049_dwes', 'u366072049_dwes', 'carmen06021983');
+       $dwes = new PDO('mysql:host=mysql.hostinger.es;dbname=banca_electronica', 'dwes', 'dwes');
        
        // Habilitamos las excepciones para poder capturarlas y tratarlas
        $dwes->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
